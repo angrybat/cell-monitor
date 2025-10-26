@@ -1,0 +1,5 @@
+# Compiled files
+/target/
+
+# Cargo lock for libraries (optional, include if you're building a library)
+/Cargo.lock
