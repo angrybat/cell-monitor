@@ -4,6 +4,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+udev = "0.9.3"
 
 [dev-dependencies]
 cargo-deny = "0.18.5"
