@@ -24,10 +24,10 @@ DEPENDENCIES = [
 ]
 
 @object_type
-class CellMonitor:
+class ChargeGuru:
     @function
-    def charge_guru_container(self, source: Directory, version: str = "24.04") -> Container:
-        """Returns a base Ubuntu container with libusb installed"""
+    def container(self, source: Directory, version: str = "24.04") -> Container:
+        """Returns a Ubuntu container with libb6 and charge-guru installed this is accessible via VNC and noVNC."""
         libb6_repository = dag.git("https://github.com/angrybat/libb6").branch("main").tree()
         charge_guru_repository = dag.git("https://github.com/angrybat/charge-guru").branch("main").tree()
         apt_cache = dag.cache_volume("apt-cache")

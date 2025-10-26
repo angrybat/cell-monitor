@@ -3,5 +3,6 @@
   "engineVersion": "v0.19.2",
   "sdk": {
     "source": "python"
-  }
+  },
+  "source": "dagger"
 }
