@@ -15,5 +15,8 @@
 			]
 		}
 	},
-	"postCreateCommand": "chmod +x ./.devcontainer/post_create_command.sh && ./.devcontainer/post_create_command.sh"
+	"postCreateCommand": "chmod +x ./.devcontainer/post_create_command.sh && ./.devcontainer/post_create_command.sh",
+	"mounts": [
+		"source=/dev/bus/usb,target=/dev/bus/usb,type=bind"
+	]
 }
